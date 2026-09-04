@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Game Emulator</title>
+    <style>
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #000; }
+        #emulator { width: 100%; height: 100%; }
+    </style>
+</head>
+<body>
+
+    <div id="emulator"></div>
+
+    <script>
+        // Configuration options for EmulatorJS
+        EJS_player = '#emulator';
+        EJS_core = 'snes';
+        EJS_gameName = 'Super Mario RPG';
+        
+        EJS_gameUrl = 'roms/Super Mario RPG - Legend of the Seven Stars (USA).sfc'; 
+        
+        // Path to EmulatorJS data files hosted on a public CDN
+        EJS_pathtodata = 'https://jsdelivr.net';
+    </script>
+    <script src="https://jsdelivr.netloader.js"></script>
+
+</body>
+</html>
